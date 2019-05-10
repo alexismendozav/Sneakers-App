@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- VISTA DE LA CATEGORIA -->
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- SE INCLUYE EL LAYOUT PERSONALIZADO PARA  EL TOP BAR  -->
+        <include layout="@layout/categories_top_bar"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="60dp">
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewShowProducts"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- SE INCLUYE EL LAYOUT PERSONALIZADO PARA LA BARRA DE NAVEGACION  -->
+        <include layout="@layout/layout_bottom_navigation_view"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
