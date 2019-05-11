@@ -30,7 +30,7 @@ class AdapterTennis (var context:Context, items : ArrayList<Tennis>) : BaseAdapt
         holder?.imageViewSneaker?.setImageResource(item?.image!!)
         holder?.textViewName?.text = item?.name
         holder?.textViewBrand?.text = item?.brand
-        holder?.textViewPrice?.text = item?.price
+        holder?.textViewPrice?.text = "$ "+item?.price
         return view!!
     }
 

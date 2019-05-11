@@ -101,8 +101,6 @@ class AllProductsActivity : AppCompatActivity() {
             "CQ2972" -> return R.drawable.cq
             "DB0836" -> return R.drawable.db0
             "VN0A38EMU5D" -> return R.drawable.vn0
-
-
             else -> return  R.drawable.vn0001
         }
 
