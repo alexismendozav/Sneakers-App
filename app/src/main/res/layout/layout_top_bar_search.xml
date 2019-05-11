@@ -1,0 +1,39 @@
+<merge xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/categoriesToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Nombre o marca del producto"
+                        android:ems="10"
+                        android:id="@+id/editTextSearch"
+                        android:layout_weight="3"
+                        />
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/ic_search"
+                        android:id="@+id/imageButtonSearch"
+                        android:background="@color/colorPrimary"
+                        android:layout_weight="3"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+</merge>

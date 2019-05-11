@@ -4,22 +4,31 @@
                 android:layout_height="match_parent">
 
     <!--Se importa el layout para el top bar -->
-    <include layout="@layout/layout_top_tabs"/>
+    <include layout="@layout/layout_top_bar_search"/>
 
     <!--Layout Principal -->
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="63dp"
             android:layout_marginBottom="60dp">
-
         <TextView
-
-                android:text="HOLA DESDE EL SEARCH"
+                android:id="@+id/textViewError"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <GridView
+                android:id="@+id/gridViewProductsSearch"
+                android:paddingTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textViewShowProducts"
-                android:layout_weight="1"/>
+                android:columnWidth="180dp"
+                android:numColumns="2"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:gravity="top"
+        />
+
     </LinearLayout>
 
     <!--Se importa el layout para la bottom bar -->

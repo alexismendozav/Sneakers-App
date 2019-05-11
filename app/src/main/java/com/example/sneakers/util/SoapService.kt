@@ -69,4 +69,28 @@ class SoapService {
         }
         return  response
     }
+
+    fun getProductsForSearch(search : String) : String{
+        //SE ASIGNA EL NOMBRE DEL METODO Y EL SOAP ACTION
+        var objective = search
+        methodName = "GetBusquedaStr"
+        soapAction = "http://tempuri.org/IService1/GetBusquedaStr"
+        try {
+            val request = SoapObject(nameSpace, methodName)
+            //Se agrega el parametro que necesita el metodo
+            request.addProperty("objetivo",objective)
+            val soapEnvelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
+            soapEnvelope.dotNet = true
+            soapEnvelope.setOutputSoapObject(request)
+            val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
+            StrictMode.setThreadPolicy(policy)
+            val transport = HttpTransportSE(url)
+            transport.call(soapAction, soapEnvelope)
+            resultString = soapEnvelope.response as SoapPrimitive
+            response =  resultString.toString()
+        } catch (ex: Exception) {
+            response = ""
+        }
+        return  response
+    }
 }
