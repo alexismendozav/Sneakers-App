@@ -6,6 +6,10 @@ import android.support.design.widget.BottomNavigationView
 import android.view.Menu
 import android.view.MenuItem
 import com.example.sneakers.*
+import com.example.sneakers.categories.CategoriesActivity
+import com.example.sneakers.home.MainActivity
+import com.example.sneakers.search.SearchActivity
+import com.example.sneakers.user.UserActivity
 
 //CLASE QUE LLEVA EL CONTROL DE LA BARRA DE NAVEGACIÓN
 

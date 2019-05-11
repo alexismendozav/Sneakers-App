@@ -1,9 +1,10 @@
-package com.example.sneakers
+package com.example.sneakers.categories
 
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
+import com.example.sneakers.R
 import com.example.sneakers.util.BottomNavigationViewHelper
 import com.example.sneakers.util.SoapService
 

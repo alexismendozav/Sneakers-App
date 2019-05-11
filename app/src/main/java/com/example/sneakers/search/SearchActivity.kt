@@ -1,8 +1,9 @@
-package com.example.sneakers
+package com.example.sneakers.search
 
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
+import com.example.sneakers.R
 import com.example.sneakers.util.BottomNavigationViewHelper
 
 class SearchActivity : AppCompatActivity() {
