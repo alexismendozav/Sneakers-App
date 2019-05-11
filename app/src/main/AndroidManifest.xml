@@ -27,6 +27,9 @@
         <activity android:name=".categories.CategoriesActivity"/>
         <activity android:name=".search.SearchActivity"/>
         <activity android:name=".user.UserActivity"/>
+        <activity android:name=".categories.AllProductsActivity">
+
+        </activity>
     </application>
 
 </manifest>

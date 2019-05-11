@@ -15,16 +15,20 @@
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="55dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginBottom="60dp">
 
-            <android.support.v7.widget.RecyclerView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/recyclerCategory">
-
-            </android.support.v7.widget.RecyclerView>
-
+            <GridView
+                    android:id="@+id/gridViewProducts"
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="180dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:gravity="top"
+            />
         </LinearLayout>
 
         <!-- SE INCLUYE EL LAYOUT PERSONALIZADO PARA LA BARRA DE NAVEGACION  -->

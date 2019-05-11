@@ -23,12 +23,13 @@ class SoapService {
     private var response: String = ""
 
     //METODO QUE OPTIENE TODOS LOS PRODUCTOS
-    fun getProducts ( ) : String{
+    fun getAllProducts ( ) : String{
         //SE ASIGNA EL NOMBRE DEL METODO Y EL SOAP ACTION
         methodName = "GetProductos_String"
         soapAction = "http://tempuri.org/IService1/GetProductos_String"
         try {
             val request = SoapObject(nameSpace, methodName)
+
             val soapEnvelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
             soapEnvelope.dotNet = true
             soapEnvelope.setOutputSoapObject(request)
@@ -41,6 +42,30 @@ class SoapService {
         } catch (ex: Exception) {
             response = "Error\n$ex"
 
+        }
+        return  response
+    }
+
+    fun getProductsForCategory(category: String) : String{
+        //SE ASIGNA EL NOMBRE DEL METODO Y EL SOAP ACTION
+        var objective = category.toInt()
+        methodName = "GetCategoria"
+        soapAction = "http://tempuri.org/IService1/GetCategoria"
+        try {
+            val request = SoapObject(nameSpace, methodName)
+            //Se agrega el parametro que necesita el metodo
+            request.addProperty("objetivo",objective)
+            val soapEnvelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
+            soapEnvelope.dotNet = true
+            soapEnvelope.setOutputSoapObject(request)
+            val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
+            StrictMode.setThreadPolicy(policy)
+            val transport = HttpTransportSE(url)
+            transport.call(soapAction, soapEnvelope)
+            resultString = soapEnvelope.response as SoapPrimitive
+            response =  resultString.toString()
+        } catch (ex: Exception) {
+            response = "Error\n$ex"
         }
         return  response
     }

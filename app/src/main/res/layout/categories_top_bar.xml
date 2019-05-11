@@ -17,7 +17,7 @@
                         android:text="Categorias"
                         android:gravity="center"
                         android:textSize="25dp"
-                        android:textColor="@color/colorPrimaryText"/>
+                        />
 
             </RelativeLayout>
 
