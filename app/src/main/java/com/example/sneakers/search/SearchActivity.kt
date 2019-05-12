@@ -20,6 +20,7 @@ class SearchActivity : AppCompatActivity() {
     private val context = this
     private val numberOfActivity = 2
     private var listOfTennis : ArrayList <Tennis> ?= null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)

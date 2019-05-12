@@ -6,6 +6,7 @@ import android.support.design.widget.AppBarLayout
 import android.support.design.widget.BottomNavigationView
 import android.widget.GridView
 import android.widget.ImageView
+import android.widget.TextView
 import com.example.sneakers.R
 import com.example.sneakers.models.Tennis
 import com.example.sneakers.util.AdapterTennis

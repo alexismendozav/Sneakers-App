@@ -20,7 +20,7 @@
 
             <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="25dp"
                     android:src="@drawable/logo" />
@@ -32,7 +32,7 @@
                     android:layout_marginTop="8dp">
 
                 <EditText
-                        android:id="@+id/inputEmail"
+                        android:id="@+id/editTextEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Email"
@@ -48,7 +48,7 @@
                     android:layout_marginTop="8dp">
 
                 <EditText
-                        android:id="@+id/inputPassword"
+                        android:id="@+id/editTextPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Contraseña"
@@ -62,14 +62,24 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/border_button"
-                    android:text="INICIAR SESIÓN" />
+                    android:text="INICIAR SESIÓN"/>
 
             <TextView
+                android:id="@+id/textViewCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:text="¿No tienes cuenta?, crea una ahora mismo."
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                    android:id="@+id/textViewRegistry"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="25dp"
                     android:gravity="center"
-                    android:text="¿No tienes cuenta?, crea una ahora mismo."
+                    android:text=""
                     android:textColor="@color/colorPrimaryDark" />
 
         </LinearLayout>

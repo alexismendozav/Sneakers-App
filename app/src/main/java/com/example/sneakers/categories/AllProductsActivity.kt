@@ -25,7 +25,6 @@ class AllProductsActivity : AppCompatActivity() {
         val textViewCategories : TextView = findViewById(R.id.textViewCategories)
         var gridViewProducts = findViewById <GridView> (R.id.gridViewProducts)
         val bottomNavigationView : BottomNavigationView = findViewById(R.id.bottomNaViewBar)
-
         BottomNavigationViewHelper().setupBottomNavigationView(numberOfActivity,context,bottomNavigationView)
 
         val intent = intent

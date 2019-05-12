@@ -23,7 +23,6 @@ class CategoriesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_categories)
-
         val bottomNavigationView : BottomNavigationView = context.findViewById(R.id.bottomNaViewBar)
         //Se manda a llamar al metodo que habilita la navegacion
         BottomNavigationViewHelper().setupBottomNavigationView(numberOfActivity,context,bottomNavigationView)
