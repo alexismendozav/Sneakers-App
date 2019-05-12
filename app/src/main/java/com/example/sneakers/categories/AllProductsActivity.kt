@@ -1,9 +1,12 @@
 package com.example.sneakers.categories
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.widget.GridView
+import android.widget.ImageButton
+import android.widget.TextView
 import com.example.sneakers.R
 import com.example.sneakers.models.Tennis
 import com.example.sneakers.util.AdapterTennis
@@ -18,8 +21,11 @@ class AllProductsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_products)
+        val imageButtonBack : ImageButton = findViewById(R.id.imageButtonBack)
+        val textViewCategories : TextView = findViewById(R.id.textViewCategories)
+        var gridViewProducts = findViewById <GridView> (R.id.gridViewProducts)
+        val bottomNavigationView : BottomNavigationView = findViewById(R.id.bottomNaViewBar)
 
-        val bottomNavigationView : BottomNavigationView = context.findViewById(R.id.bottomNaViewBar)
         BottomNavigationViewHelper().setupBottomNavigationView(numberOfActivity,context,bottomNavigationView)
 
         val intent = intent
@@ -27,12 +33,21 @@ class AllProductsActivity : AppCompatActivity() {
         if(category == "0"){
             showAllProducts()
         }else{
+            when(category){
+                "1" -> { textViewCategories.text = "HOMBRES" }
+                "2" -> { textViewCategories.text = "MUJERES" }
+                "3" -> { textViewCategories.text = "NIÑOS" }
+                "4" -> { textViewCategories.text = "NIÑAS" }
+            }
             showProductsForCategory(category)
         }
-
-        var gridViewProducts = findViewById <GridView> (R.id.gridViewProducts)
         val adapter = AdapterTennis(this,listOfTennis!!)
         gridViewProducts.adapter = adapter
+
+        imageButtonBack.setOnClickListener{
+            val intent = Intent(this,CategoriesActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 

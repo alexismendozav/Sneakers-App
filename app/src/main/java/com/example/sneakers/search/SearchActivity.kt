@@ -1,5 +1,6 @@
 package com.example.sneakers.search
 
+import android.app.ActionBar
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
@@ -22,6 +23,9 @@ class SearchActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
+
+        supportActionBar?.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+        supportActionBar?.setCustomView(R.layout.layout_top_bar_search)
 
         //SE ENLAZA LA BARRA DE NAVEGACION
         val bottomNavigationView : BottomNavigationView = context.findViewById(R.id.bottomNaViewBar)

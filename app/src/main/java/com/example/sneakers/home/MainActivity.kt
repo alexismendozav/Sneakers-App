@@ -2,17 +2,26 @@ package com.example.sneakers.home
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.design.widget.AppBarLayout
 import android.support.design.widget.BottomNavigationView
 import android.widget.GridView
+import android.widget.ImageView
 import com.example.sneakers.R
 import com.example.sneakers.models.Tennis
 import com.example.sneakers.util.AdapterTennis
 import com.example.sneakers.util.BottomNavigationViewHelper
+import com.example.sneakers.util.NetworkStatus
 import com.example.sneakers.util.SoapService
 
 class MainActivity : AppCompatActivity() {
+
+    //App Context
     private val context = this
+
+    //Help to know what activity is selected in the navigation bar
     private val numberOfActivity = 0
+
+    //Other Variables
     private var listOfTennis : ArrayList <Tennis> ?= null
     private var listOfTennis2 : ArrayList <Tennis> ?= null
 
@@ -20,33 +29,47 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        //SE ENLAZA LA BARRA DE NAVEGACION
         val bottomNavigationView : BottomNavigationView = context.findViewById(R.id.bottomNaViewBar)
-        //SE MANDA A LLAMAR A LA CLASE QUE AYUDA A LA NAVEGACION
+        val gridViewHome = findViewById <GridView> (R.id.gridViewHome)
+        val gridViewHome2 = findViewById <GridView> (R.id.gridViewHome2)
+        val imageview1 : ImageView = findViewById(R.id.imageView1)
+        val imageview2 : ImageView = findViewById(R.id.imageView2)
+        // Call the class that helps navigation
         BottomNavigationViewHelper().setupBottomNavigationView(numberOfActivity,context,bottomNavigationView)
+
+        //Lists are initialized
         listOfTennis = ArrayList()
         listOfTennis2 = ArrayList()
-        showProductsForCategory("2",listOfTennis!!)
-        showProductsForCategory("4",listOfTennis2!!)
 
-        var gridViewHome = findViewById <GridView> (R.id.gridViewHome)
-        var gridViewHome2 = findViewById <GridView> (R.id.gridViewHome2)
-        val adapter = AdapterTennis(this,listOfTennis!!)
-        gridViewHome.adapter = adapter
+        //Verify connection
+        if(NetworkStatus().networkStatus(context)){
+            //Call the method for fill in the lists
+            showProductsForCategory("2",listOfTennis!!)
+            showProductsForCategory("4",listOfTennis2!!)
+            //Call the adapter
+            val adapter = AdapterTennis(this,listOfTennis!!)
+            gridViewHome.adapter = adapter
 
-        val adapter1 = AdapterTennis(this,listOfTennis2!!)
-        gridViewHome2.adapter = adapter1
-
+            val adapter1 = AdapterTennis(this,listOfTennis2!!)
+            gridViewHome2.adapter = adapter1
+            imageview1.setImageResource(R.drawable.portada)
+            imageview2.setImageResource(R.drawable.portada1)
+        }else{
+            val imageViewErrorNetwork : ImageView = findViewById(R.id.imageViewErrorNetwork)
+            imageViewErrorNetwork.setImageResource(R.drawable.error)
+        }
     }
 
-
+    //Call the SOAP method and fill in the list
     private fun showProductsForCategory(category: String,list : ArrayList<Tennis>){
+        //Call the SOAP method
         val productsString = SoapService().getProductsForCategory(category)
+
+        //Divide the string
         val products = productsString.split("\n")
 
-        //Metodo para extraer los tennis de la string
+        //Tennis objects are created
         var i = 0
-
         while (i <= products.size - 2) {
             var id = products[i++]
             var name = products[i++]

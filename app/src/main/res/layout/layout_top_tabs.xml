@@ -8,15 +8,16 @@
 
         <android.support.design.widget.AppBarLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
-            <android.support.design.widget.TabLayout
-                    android:id="@+id/tabs"
+            <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="55dp"
-            >
-
-            </android.support.design.widget.TabLayout>
+                    android:layout_height="wrap_content"
+                    android:text="SNEAKERS"
+                    android:textSize="23dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    />
 
         </android.support.design.widget.AppBarLayout>
 

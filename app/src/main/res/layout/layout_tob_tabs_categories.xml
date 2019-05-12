@@ -4,7 +4,8 @@
 
     <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp">
+            android:layout_height="60dp"
+            >
 
         <android.support.v7.widget.Toolbar
                 android:id="@+id/categoriesToolBar"
@@ -15,29 +16,29 @@
                     android:layout_height="match_parent"
                     android:gravity="center_vertical">
 
-
-                <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:inputType="text"
-                        android:hint="Nombre o marca del producto"
-                        android:ems="10"
-                        android:id="@+id/editTextSearch"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white"
-                        android:layout_weight="3"
-                        />
                 <ImageButton
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        app:srcCompat="@drawable/ic_search_white"
-                        android:id="@+id/imageButtonSearch"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_back"
+                        android:padding="10dp"
                         android:background="@color/colorPrimary"
-                        android:layout_weight="3"/>
+                        android:id="@+id/imageButtonBack"/>
+                <TextView
+                        android:id="@+id/textViewCategories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TODOS"
+                        android:textSize="23dp"
+                        android:padding="5dp"
+                        android:paddingEnd="70dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                />
 
             </LinearLayout>
 
         </android.support.v7.widget.Toolbar>
+
 
     </android.support.design.widget.AppBarLayout>
 </merge>
