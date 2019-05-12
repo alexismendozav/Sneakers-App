@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -13,16 +14,96 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="50dp"
-            android:layout_marginBottom="60dp">
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
 
-
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                tools:srcCompat="@tools:sample/avatars"
+                android:id="@+id/imageViewUser"
+        />
         <TextView
-
-                android:text="HOLA DESDE EL USUARIO"
+                android:text=""
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textViewShowProducts"
-                android:layout_weight="1"/>
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewWelcome"
+                android:layout_gravity="center_horizontal"
+        />
+
+        <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewName"
+                android:layout_gravity="center_horizontal"
+        />
+
+        <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/textViewEmail"
+        />
+
+        <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/textViewPhone"
+        />
+
+        <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/textViewCp"
+        />
+
+        <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/textViewAddress"
+        />
+
+        <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnSession"
+                android:layout_width="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_button"
+                android:text="Entrar o crear una cuenta"/>
+
+        <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnCloseSession"
+                android:layout_width="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_button"
+                android:text="Cerrar Sesión"/>
+
     </LinearLayout>
 
     <!--Se importa el layout para la bottom bar -->

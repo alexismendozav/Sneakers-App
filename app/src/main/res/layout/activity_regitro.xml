@@ -19,6 +19,7 @@
                 android:paddingTop="55dp">
 
             <TextView
+                    android:id="@+id/tittleRegister"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="CREAR UNA NUEVA CUENTA"

@@ -5,6 +5,7 @@ import android.content.Intent
 import android.support.design.widget.BottomNavigationView
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.EditText
 import com.example.sneakers.*
 import com.example.sneakers.categories.CategoriesActivity
 import com.example.sneakers.home.MainActivity
@@ -13,9 +14,8 @@ import com.example.sneakers.user.UserActivity
 
 //CLASE QUE LLEVA EL CONTROL DE LA BARRA DE NAVEGACIÓN
 
-class BottomNavigationViewHelper  {
+class BottomNavigationViewHelper () {
     private var context : Context ?= null
-
     fun setupBottomNavigationView (numberOfActivity : Int , context: Context, bottomNavigationView : BottomNavigationView) {
         this.context = context
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)

@@ -21,7 +21,6 @@ class SoapService {
     //VARIABLE FOR THE RESPONSE OF THE SERVICE
     private var resultString: SoapPrimitive? = null
     private var response: String = ""
-
     //METODO QUE OPTIENE TODOS LOS PRODUCTOS
     fun getAllProducts ( ) : String{
         //SE ASIGNA EL NOMBRE DEL METODO Y EL SOAP ACTION
@@ -93,4 +92,92 @@ class SoapService {
         }
         return  response
     }
+
+    fun getStartSession(email : String, password : String ) : String{
+        //SE ASIGNA EL NOMBRE DEL METODO Y EL SOAP ACTION
+        var email = email
+        var password = password
+        methodName = "VerificarLogin"
+        soapAction = "http://tempuri.org/IService1/VerificarLogin"
+        try {
+            val request = SoapObject(nameSpace, methodName)
+            //Se agrega el parametro que necesita el metodo
+            request.addProperty("correo",email)
+            request.addProperty("contrasena",password)
+            val soapEnvelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
+            soapEnvelope.dotNet = true
+            soapEnvelope.setOutputSoapObject(request)
+            val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
+            StrictMode.setThreadPolicy(policy)
+            val transport = HttpTransportSE(url)
+            transport.call(soapAction, soapEnvelope)
+            resultString = soapEnvelope.response as SoapPrimitive
+            response =  resultString.toString()
+        } catch (ex: Exception) {
+            response = "0"
+        }
+        return  response
+    }
+
+    fun setDataUser(id_cliente: Int,    nombre: String,
+                    apellido  : String, email : String,
+                    telefono  : String, cp    : String,
+                    estado    : String, ciudad: String,
+                    colonia   : String, calle : String, password  : String): String{
+
+        methodName = "AgregarCliente"
+        soapAction = "http://tempuri.org/IService1/AgregarCliente"
+        try {
+            val request = SoapObject(nameSpace, methodName)
+            //Se agrega el parametro que necesita el metodo
+            request.addProperty("id_cliente",id_cliente)
+            request.addProperty("nombre",nombre)
+            request.addProperty("apellidos",apellido)
+            request.addProperty("correo",email)
+            request.addProperty("telefono",telefono)
+            request.addProperty("codigo_postal",cp)
+            request.addProperty("estado",estado)
+            request.addProperty("ciudad",ciudad)
+            request.addProperty("colonia",colonia)
+            request.addProperty("calle",calle)
+            request.addProperty("contrasena",password)
+            val soapEnvelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
+            soapEnvelope.dotNet = true
+            soapEnvelope.setOutputSoapObject(request)
+            val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
+            StrictMode.setThreadPolicy(policy)
+            val transport = HttpTransportSE(url)
+            transport.call(soapAction, soapEnvelope)
+            resultString = soapEnvelope.response as SoapPrimitive
+            response =  resultString.toString()
+        } catch (ex: Exception) {
+            response = "0"
+        }
+        return  response
+    }
+
+
+    fun getClient(email : String) : String{
+        //SE ASIGNA EL NOMBRE DEL METODO Y EL SOAP ACTION
+        methodName = "GetCliente"
+        soapAction = "http://tempuri.org/IService1/GetCliente"
+        try {
+            val request = SoapObject(nameSpace, methodName)
+            //Se agrega el parametro que necesita el metodo
+            request.addProperty("correo",email)
+            val soapEnvelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
+            soapEnvelope.dotNet = true
+            soapEnvelope.setOutputSoapObject(request)
+            val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
+            StrictMode.setThreadPolicy(policy)
+            val transport = HttpTransportSE(url)
+            transport.call(soapAction, soapEnvelope)
+            resultString = soapEnvelope.response as SoapPrimitive
+            response =  resultString.toString()
+        } catch (ex: Exception) {
+            response = ""
+        }
+        return  response
+    }
+
 }
