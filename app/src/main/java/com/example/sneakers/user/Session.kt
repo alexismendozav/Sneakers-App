@@ -56,6 +56,7 @@ class Session : AppCompatActivity() {
                 editor.apply()
                 val intent = Intent(this,UserActivity::class.java)
                 startActivity(intent)
+                finish()
             }else{
                 editTextPassword?.setText("")
                 Toast.makeText(this,"Usuario o contraseña incorrectos",Toast.LENGTH_LONG).show()
@@ -65,7 +66,6 @@ class Session : AppCompatActivity() {
         textViewCreateAccount?.setOnClickListener{
             var intent= Intent (this, Registry::class.java)
             startActivity(intent)
-            finish()
         }
     }
 }

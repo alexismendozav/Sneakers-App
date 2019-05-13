@@ -6,13 +6,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import com.example.sneakers.R
 import com.example.sneakers.util.SoapService
-import kotlinx.android.synthetic.main.activity_regitro.*
-import kotlinx.android.synthetic.main.activity_sesion.*
-import org.w3c.dom.Text
-import java.util.concurrent.ThreadLocalRandom
+import kotlinx.android.synthetic.main.activity_registry.*
 import java.util.regex.Pattern
 
 class Registry : AppCompatActivity() {
@@ -36,7 +32,7 @@ class Registry : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_regitro)
+        setContentView(R.layout.activity_registry)
 
         textViewTittle   = findViewById(R.id.tittleRegister)
         editTextName     = findViewById(R.id.inputName)
