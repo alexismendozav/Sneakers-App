@@ -61,7 +61,7 @@ class UserActivity : AppCompatActivity() {
             textViewEmail?.text = dataClient?.get(3)
             textViewPhone?.text= "Tel. " + dataClient?.get(4)
             textViewCp?.text = "C.P: " + dataClient?.get(5)
-            textViewAddress?.text = "Calle "+dataClient?.get(9)+", colonia "+ dataClient?.get(8) +", "+ dataClient?.get(7)+", "+ dataClient?.get(6)
+            textViewAddress?.text = "Calle "+dataClient?.get(9)+", Colonia "+ dataClient?.get(8) +", "+ dataClient?.get(7)+", "+ dataClient?.get(6)
             buttonStartSession?.visibility = View.INVISIBLE
 
         }else{

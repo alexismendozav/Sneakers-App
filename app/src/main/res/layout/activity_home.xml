@@ -64,15 +64,6 @@
 
                     />
 
-                    <GridView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:numColumns="auto_fit"
-                            android:id="@+id/gridViewHome2"
-                            android:verticalSpacing="10dp"
-                            android:horizontalSpacing="10dp"
-                            android:gravity="center"
-                    />
                 </LinearLayout>
             </ScrollView>
             <ImageView

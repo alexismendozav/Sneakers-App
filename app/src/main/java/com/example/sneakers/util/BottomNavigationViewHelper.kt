@@ -33,7 +33,6 @@ class BottomNavigationViewHelper () {
             R.id.ic_house -> {
                 val intent = Intent (context, MainActivity::class.java)
                 context?.startActivity(intent)
-                
             }
             R.id.ic_categories -> {
                 val intent2 = Intent(context, CategoriesActivity::class.java)
