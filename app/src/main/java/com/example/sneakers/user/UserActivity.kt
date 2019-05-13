@@ -56,15 +56,15 @@ class UserActivity : AppCompatActivity() {
         if(sessionEmail != "Empty"){
             getDataClient(sessionEmail!!)
             imageViewUser?.setImageResource(R.drawable.usuario)
-            textViewWelcome?.text = "Bienvenido"
+            textViewWelcome?.text = "BIENVENIDO"
             textViewName?.text = dataClient?.get(1) + " " +dataClient?.get(2)
             textViewEmail?.text = dataClient?.get(3)
-            textViewPhone?.text= dataClient?.get(4)
-            textViewCp?.text = dataClient?.get(5)
+            textViewPhone?.text= "Tel. " + dataClient?.get(4)
+            textViewCp?.text = "C.P: " + dataClient?.get(5)
             buttonStartSession?.visibility = View.INVISIBLE
 
         }else{
-            textViewCp?.text = "HOLA VISITANTE"
+            textViewEmail?.text = "HOLA VISITANTE"
             buttonStartSession?.visibility = View.VISIBLE
             buttonCloseSession?.visibility = View.INVISIBLE
 

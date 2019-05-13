@@ -18,9 +18,10 @@
             android:orientation="vertical">
 
         <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300px"
+                android:layout_height="300px"
                 android:layout_marginTop="15sp"
+                android:layout_gravity="center_horizontal"
                 tools:srcCompat="@tools:sample/avatars"
                 android:id="@+id/imageViewUser"
         />
@@ -32,6 +33,7 @@
                 android:layout_marginTop="10dp"
                 android:id="@+id/textViewWelcome"
                 android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
         />
 
         <TextView
@@ -42,6 +44,7 @@
                 android:layout_marginTop="10dp"
                 android:id="@+id/textViewName"
                 android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimaryText"
         />
 
         <TextView
@@ -53,6 +56,7 @@
                 android:layout_marginTop="20dp"
                 android:paddingEnd="10dp"
                 android:id="@+id/textViewEmail"
+                android:textColor="@color/colorPrimaryText"
         />
 
         <TextView
@@ -64,6 +68,7 @@
                 android:layout_marginTop="20dp"
                 android:paddingEnd="10dp"
                 android:id="@+id/textViewPhone"
+                android:textColor="@color/colorPrimaryText"
         />
 
         <TextView
@@ -75,6 +80,7 @@
                 android:layout_marginTop="20dp"
                 android:paddingEnd="10dp"
                 android:id="@+id/textViewCp"
+                android:textColor="@color/colorPrimaryText"
         />
 
         <TextView
@@ -86,6 +92,7 @@
                 android:layout_marginTop="20dp"
                 android:paddingEnd="10dp"
                 android:id="@+id/textViewAddress"
+                android:textColor="@color/colorPrimaryText"
         />
 
         <android.support.v7.widget.AppCompatButton
