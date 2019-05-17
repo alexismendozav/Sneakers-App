@@ -46,6 +46,7 @@ class AllProductsActivity : AppCompatActivity() {
         imageButtonBack.setOnClickListener{
             val intent = Intent(this,CategoriesActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 

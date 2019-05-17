@@ -1,11 +1,13 @@
 package com.example.sneakers.home
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.widget.GridView
 import android.widget.ImageView
 import com.example.sneakers.R
+import com.example.sneakers.categories.CategoriesActivity
 import com.example.sneakers.models.Tennis
 import com.example.sneakers.util.AdapterTennis
 import com.example.sneakers.util.BottomNavigationViewHelper
@@ -28,10 +30,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val bottomNavigationView : BottomNavigationView = context.findViewById(R.id.bottomNaViewBar)
+        val bottomNavigationView : BottomNavigationView = findViewById(R.id.bottomNaViewBar)
         val gridViewHome = findViewById <GridView> (R.id.gridViewHome)
         val imageView1 : ImageView = findViewById(R.id.imageView1)
         val imageView2 : ImageView = findViewById(R.id.imageView2)
+        val imageView3 : ImageView = findViewById(R.id.imageView3)
 
         // Call the class that helps navigation
         BottomNavigationViewHelper().setupBottomNavigationView(numberOfActivity,context,bottomNavigationView)
@@ -46,13 +49,30 @@ class MainActivity : AppCompatActivity() {
             showProductsForCategory("1",listOfTennis!!)
             //Call the adapter
             val adapter = AdapterTennis(this,listOfTennis!!)
-            gridViewHome.adapter = adapter
+
             imageView1.setImageResource(R.drawable.home1)
+            gridViewHome.adapter = adapter
             imageView2.setImageResource(R.drawable.home3)
+            imageView3.setImageResource(R.drawable.home2)
 
         }else{
             val imageViewErrorNetwork : ImageView = findViewById(R.id.imageViewErrorNetwork)
             imageViewErrorNetwork.setImageResource(R.drawable.error)
+        }
+
+        imageView1.setOnClickListener{
+            val intent= Intent(this,CategoriesActivity::class.java)
+            startActivity(intent)
+        }
+
+        imageView2.setOnClickListener{
+            val intent= Intent(this,CategoriesActivity::class.java)
+            startActivity(intent)
+        }
+
+        imageView3.setOnClickListener{
+            val intent= Intent(this,CategoriesActivity::class.java)
+            startActivity(intent)
         }
     }
 

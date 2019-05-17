@@ -45,6 +45,7 @@
                             android:scaleType="fitXY"
                             android:layout_weight="1"/>
                     <GridView
+                            android:paddingTop="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:numColumns="auto_fit"
@@ -56,6 +57,7 @@
 
 
                     <ImageView
+                            android:paddingTop="10dp"
                             android:id="@+id/imageView2"
                             android:layout_width="match_parent"
                             android:layout_height="160dp"
@@ -63,6 +65,18 @@
                             android:scaleType="fitXY"
 
                     />
+
+                    <ImageView
+                            android:paddingTop="10dp"
+                            android:id="@+id/imageView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+
+                    />
+
+
 
                 </LinearLayout>
             </ScrollView>

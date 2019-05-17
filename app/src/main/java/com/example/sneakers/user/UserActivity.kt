@@ -65,7 +65,8 @@ class UserActivity : AppCompatActivity() {
             buttonStartSession?.visibility = View.INVISIBLE
 
         }else{
-            textViewEmail?.text = "HOLA VISITANTE"
+            textViewWelcome?.text = "HOLA VISITANTE"
+            imageViewUser?.visibility = View.INVISIBLE
             buttonStartSession?.visibility = View.VISIBLE
             buttonCloseSession?.visibility = View.INVISIBLE
 

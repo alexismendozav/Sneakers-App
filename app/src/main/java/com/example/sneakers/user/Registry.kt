@@ -75,7 +75,7 @@ class Registry : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }else{
-
+                    
             }
         }
     }
