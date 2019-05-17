@@ -49,23 +49,34 @@ class Session : AppCompatActivity() {
             var password : String = editTextPassword?.text.toString()
             var correctData = SoapService().getStartSession(email, password )
 
-            if(correctData == "1"){
-                //Modo edicion del preference manager
-                val editor = preferences.edit()
-                editor.putString(key,email)
-                editor.apply()
-                val intent = Intent(this,UserActivity::class.java)
-                startActivity(intent)
-            }else{
-                editTextPassword?.setText("")
-                Toast.makeText(this,"Usuario o contraseña incorrectos",Toast.LENGTH_LONG).show()
+
+            if(!editTextEmail?.text.isNullOrEmpty()){
+                if(!android.util.Patterns.EMAIL_ADDRESS.matcher(editTextEmail?.text).matches())
+                {
+                    editTextEmail?.error= "Digite su correo"
+                }else{
+                    if(correctData == "1"){
+                        //Modo edicion del preference manager
+                        val editor = preferences.edit()
+                        editor.putString(key,email)
+                        editor.apply()
+                        val intent = Intent(this,UserActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    }else{
+                        editTextPassword?.setText("")
+                        Toast.makeText(this,"Usuario o contraseña incorrectos",Toast.LENGTH_LONG).show()
+                    }
+                }
+            }else
+            {
+                editTextEmail?.error = "Campo obligatorio"
             }
         }
 
         textViewCreateAccount?.setOnClickListener{
             var intent= Intent (this, Registry::class.java)
             startActivity(intent)
-            finish()
         }
     }
 }

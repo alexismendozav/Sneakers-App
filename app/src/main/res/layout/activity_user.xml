@@ -13,14 +13,25 @@
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginTop="60dp"
             android:orientation="vertical">
+        <ScrollView android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="65dp">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="60dp">
+
 
         <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300px"
+                android:layout_height="300px"
                 android:layout_marginTop="15sp"
+                android:layout_gravity="center_horizontal"
                 tools:srcCompat="@tools:sample/avatars"
                 android:id="@+id/imageViewUser"
         />
@@ -32,6 +43,7 @@
                 android:layout_marginTop="10dp"
                 android:id="@+id/textViewWelcome"
                 android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
         />
 
         <TextView
@@ -42,6 +54,7 @@
                 android:layout_marginTop="10dp"
                 android:id="@+id/textViewName"
                 android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimaryText"
         />
 
         <TextView
@@ -53,6 +66,7 @@
                 android:layout_marginTop="20dp"
                 android:paddingEnd="10dp"
                 android:id="@+id/textViewEmail"
+                android:textColor="@color/colorPrimaryText"
         />
 
         <TextView
@@ -64,6 +78,7 @@
                 android:layout_marginTop="20dp"
                 android:paddingEnd="10dp"
                 android:id="@+id/textViewPhone"
+                android:textColor="@color/colorPrimaryText"
         />
 
         <TextView
@@ -75,18 +90,21 @@
                 android:layout_marginTop="20dp"
                 android:paddingEnd="10dp"
                 android:id="@+id/textViewCp"
+                android:textColor="@color/colorPrimaryText"
         />
 
         <TextView
                 android:text=""
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
+                android:textSize="15sp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:paddingEnd="10dp"
                 android:id="@+id/textViewAddress"
+                android:textColor="@color/colorPrimaryText"
         />
+
 
         <android.support.v7.widget.AppCompatButton
                 android:id="@+id/btnSession"
@@ -103,7 +121,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/border_button"
                 android:text="Cerrar Sesión"/>
-
+        </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
     <!--Se importa el layout para la bottom bar -->

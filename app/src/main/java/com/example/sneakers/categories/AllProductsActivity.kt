@@ -46,6 +46,7 @@ class AllProductsActivity : AppCompatActivity() {
         imageButtonBack.setOnClickListener{
             val intent = Intent(this,CategoriesActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 
@@ -114,6 +115,12 @@ class AllProductsActivity : AppCompatActivity() {
             "BB9797" -> return R.drawable.bb97
             "CQ2972" -> return R.drawable.cq
             "DB0836" -> return R.drawable.db0
+            "365215-06" -> return R.drawable.d1506
+            "367232-02" -> return R.drawable.d202
+            "818382-016" -> return R.drawable.d016
+            "833671-201" -> return R.drawable.d201
+            "839985-006" -> return R.drawable.d006
+            "904260-602" -> return R.drawable.d0602
             "VN0A38EMU5D" -> return R.drawable.vn0
             else -> return  R.drawable.vn0001
         }

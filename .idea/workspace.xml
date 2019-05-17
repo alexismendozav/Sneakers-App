@@ -19,8 +19,80 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="AvailableLibraryUpdateStorage">
+    <library-updates>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>recyclerview-v7</name>
+        <version>28.0.0</version>
+        <repository>Google,Android Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>org.jetbrains.kotlin</group-id>
+        <name>kotlin-stdlib-jdk7</name>
+        <version>1.3.31</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>appcompat-v7</name>
+        <version>28.0.0</version>
+        <repository>Google,Android Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>leanback-v17</name>
+        <version>28.0.0</version>
+        <repository>Google,Android Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>design</name>
+        <version>28.0.0</version>
+        <repository>Google,Android Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>cardview-v7</name>
+        <version>28.0.0</version>
+        <repository>Google,Android Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.github.bumptech.glide</group-id>
+        <name>glide</name>
+        <version>4.9.0</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support.constraint</group-id>
+        <name>constraint-layout</name>
+        <version>2.0.0-beta1</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>junit</group-id>
+        <name>junit</name>
+        <version>4.13-beta-3</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support.test</group-id>
+        <name>runner</name>
+        <version>1.0.2</version>
+        <repository>Google,Android Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support.test.espresso</group-id>
+        <name>espresso-core</name>
+        <version>3.0.2</version>
+        <repository>Google,Android Repository</repository>
+      </library-update>
+    </library-updates>
+    <last-search-timestamp>1557727799415</last-search-timestamp>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="efd4db58-ae1d-4f66-ac0c-980cd8a97f09" name="Default Changelist" comment="">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       <change afterPath="$PROJECT_DIR$/app/src/main/ic_sneakers-web.png" afterDir="false" />
@@ -30,6 +102,8 @@
       <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_sneakers.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_sneakers.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_sneakers.png" afterDir="false" />
+>>>>>>> user
+=======
 >>>>>>> user
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -43,27 +117,38 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_leanback_v17_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_28_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+>>>>>>> user
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/Sneakers.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/Sneakers.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/AllProductsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/AllProductsActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/CategoriesActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/CategoriesActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/home/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/home/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/search/SearchActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/search/SearchActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/home/SplashActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/home/SplashActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Registry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Registry.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Session.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Session.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/UserActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/UserActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/BottomNavigationViewHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/BottomNavigationViewHelper.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/SoapService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/SoapService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_regitro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_regitro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sesion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sesion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+>>>>>>> user
+=======
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_top_bar_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_top_bar_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
 >>>>>>> user
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,9 +181,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/UserActivity.kt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="320">
               <caret line="20" selection-start-line="20" selection-end-line="20" />
@@ -106,14 +193,18 @@
             <state relative-caret-position="1680">
               <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
 >>>>>>> user
+=======
+            <state relative-caret-position="260">
+              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+>>>>>>> user
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="340">
               <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
@@ -124,13 +215,18 @@
                 <element signature="e#658#676#0" expanded="true" />
               </folding>
 >>>>>>> user
+=======
+            <state relative-caret-position="460">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+>>>>>>> user
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Session.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Registry.kt">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="220">
               <caret line="13" selection-start-line="13" selection-end-line="13" />
@@ -138,19 +234,28 @@
             <state relative-caret-position="140">
               <caret line="53" column="47" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="47" />
 >>>>>>> user
+=======
+            <state relative-caret-position="2520">
+              <caret line="135" column="14" selection-start-line="135" selection-start-column="14" selection-end-line="135" selection-end-column="14" />
+>>>>>>> user
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/SoapService.kt">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="1760">
               <caret line="93" column="24" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
 =======
             <state relative-caret-position="723">
               <caret line="179" column="24" selection-start-line="179" selection-start-column="24" selection-end-line="179" selection-end-column="24" />
+>>>>>>> user
+=======
+            <state relative-caret-position="560">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
 >>>>>>> user
             </state>
           </provider>
@@ -184,9 +289,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/buttom_navigation_menu.xml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/Util/BottomNavigationViewHelper.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom_navigation_view.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/BottonNavigationViewHelper.kt" />
@@ -208,26 +310,28 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/models/Category.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/AdapterCategory.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/AdapterTennis.kt" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/GridHorizontalAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/AdapterGridHorizontal.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_tennis.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_top_tabs.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_top_bar_search.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_products.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_tob_tabs_categories.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/backup_descriptor.xml" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
 >>>>>>> user
+=======
+>>>>>>> user
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/NetworkStatus.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/CategoriesActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_regitro.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Registry.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sesion.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/BottomNavigationViewHelper.kt" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/AllProductsActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/CategoriesActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/home/MainActivity.kt" />
@@ -235,13 +339,28 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
 =======
+=======
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_tennis.xml" />
+>>>>>>> user
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/search/SearchActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/SoapService.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_user.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Session.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/UserActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/home/SplashActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Registry.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Session.kt" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+>>>>>>> user
+=======
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_top_bar_search.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/AllProductsActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/home/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/SoapService.kt" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
 >>>>>>> user
       </list>
     </option>
@@ -258,19 +377,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
-            <path>
-              <item name="SNEAKERS" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="SNEAKERS" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
             <path>
               <item name="SNEAKERS" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
@@ -279,8 +391,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,15 +398,23 @@
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="ExportApk.SignV2" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="6NUDU18727004961" />
+    <property name="device.picker.selection" value="BHG7N16C01004560" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sneakers_interfaces2019_key.jks" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Properties" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\Curso_Android\SNEAKERS\app\src\main\res\drawable-xhdpi" />
+      <recent name="C:\Users\User\Desktop\Curso_Android\SNEAKERS\app\src\main\res" />
       <recent name="C:\Users\User\Desktop\Curso_Android\SNEAKERS\app\src\main\res\layout" />
       <recent name="C:\Users\User\Desktop\Curso_Android\SNEAKERS\app\libs" />
     </key>
@@ -306,15 +424,17 @@
       <recent name="com.example.sneakers" />
     </key>
     <key name="android.template.packageName">
+      <recent name="com.example.sneakers" />
       <recent name="com.example.sneakers.user" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.sneakers.home" />
       <recent name="com.example.sneakers.user" />
       <recent name="com.example.sneakers.search" />
-      <recent name="com.example.sneakers.home" />
       <recent name="com.example.sneakers.categories" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Curso_Android\SNEAKERS\app\src\main\res\drawable-hdpi" />
       <recent name="C:\Users\User\Desktop\Curso_Android\SNEAKERS\app\src\main\res\drawable-anydpi" />
     </key>
   </component>
@@ -415,7 +535,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1376" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
 <<<<<<< HEAD
@@ -424,7 +544,7 @@
       <window_info id="Structure" order="2" sideWeight="0.4052758" side_tool="true" weight="0.18237083" />
 =======
       <window_info id="Captures" order="0" sideWeight="0.2559524" side_tool="true" weight="0.18683812" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.74404764" visible="true" weight="0.18237083" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.74404764" visible="true" weight="0.18305598" />
       <window_info id="Structure" order="2" side_tool="true" />
 >>>>>>> user
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -441,11 +561,16 @@
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5007599" side_tool="true" weight="0.37520128" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32850242" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49924013" visible="true" weight="0.048309177" />
       <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" weight="0.32850242" />
 =======
       <window_info anchor="bottom" id="Build" order="7" weight="0.048309177" />
       <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.32850242" />
+>>>>>>> user
+=======
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.4573269" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" weight="0.32850242" />
 >>>>>>> user
       <window_info anchor="bottom" id="Find" order="9" weight="0.32850242" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -454,37 +579,42 @@
       <window_info anchor="right" id="Gradle" order="2" weight="0.32978722" />
       <window_info anchor="right" id="Theme Preview" order="3" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="right" id="Preview" order="4" visible="true" weight="0.2431611" />
 =======
       <window_info anchor="right" id="Preview" order="4" weight="0.2431611" />
 >>>>>>> user
+=======
+      <window_info anchor="right" id="Preview" order="4" weight="0.29711246" />
+>>>>>>> user
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
     <layout-to-restore>
-      <window_info id="Captures" order="0" sideWeight="0.2559524" side_tool="true" visible="true" weight="0.18683812" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.74404764" visible="true" weight="0.18683812" />
+      <window_info id="Captures" order="0" sideWeight="0.2559524" side_tool="true" weight="0.18683812" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.74404764" weight="0.18389058" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
-      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Resources Explorer" order="7" weight="0.32978722" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.32850242" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.5636071" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.1336554" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32850242" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30112723" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32850242" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32850242" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.1884058" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" weight="0.32850242" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.4573269" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.32850242" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32850242" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.32978722" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.2431611" />
+      <window_info anchor="right" id="Preview" order="4" visible="true" weight="0.29711246" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout-to-restore>
   </component>
@@ -499,6 +629,7 @@
     </option>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Registry.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -518,10 +649,21 @@
 =======
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_category.xml">
 >>>>>>> user
-      <provider editor-type-id="android-designer2" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/AdapterGridHorizontal.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_top_tabs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="380">
+          <caret line="19" column="22" selection-start-line="12" selection-start-column="12" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+>>>>>>> user
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/AdapterTennis.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
         </state>
       </provider>
 <<<<<<< HEAD
@@ -530,173 +672,23 @@
       <provider editor-type-id="android-designer2" />
 =======
     </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/content/ComponentName.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/77461d11d0c37d9149636fc20d54f4f2/jars/classes.jar!/android/support/v4/app/FragmentActivity.class">
->>>>>>> user
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="444" selection-start-line="444" selection-end-line="444" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/view/Window.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="222" column="25" selection-start-line="222" selection-start-column="25" selection-end-line="222" selection-end-column="25" />
-          <folding>
-            <element signature="e#6896#6897#0" expanded="true" />
-            <element signature="e#6947#6948#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/content/ContextWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
-          <folding>
-            <element signature="e#2053#2054#0" expanded="true" />
-            <element signature="e#2104#2105#0" expanded="true" />
-            <element signature="e#2408#2409#0" expanded="true" />
-            <element signature="e#2459#2460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/girl.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/db0836.jpg" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/cq2972.jpg" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/childrens.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/GridHorizontalAdapter.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/AdapterGridHorizontal.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_tennis.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-886">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_user.xml">
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml">
->>>>>>> user
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_products.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_categories.xml">
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_top_tabs.xml">
->>>>>>> user
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="22" selection-start-line="12" selection-start-column="12" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_category.xml">
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_top_bar_search.xml">
->>>>>>> user
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="27" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/AdapterTennis.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_tob_tabs_categories.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
           <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/backup_descriptor.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/NetworkStatus.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/widget/TextView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="145" column="20" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="20" />
-          <folding>
-            <element signature="e#4749#4750#0" expanded="true" />
-            <element signature="e#4800#4801#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/77461d11d0c37d9149636fc20d54f4f2/jars/classes.jar!/android/support/v4/app/FragmentActivity.class">
+>>>>>>> user
+=======
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/text/SpannableStringBuilder.class">
+>>>>>>> user
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="115" column="18" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
@@ -712,61 +704,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/app/libs/ksoap2-android-assembly-3.6.4-jar-with-dependencies.jar!/org/ksoap2/serialization/SoapObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21058fb77f7f630e791be20c44d21179/jars/classes.jar!/android/support/v7/widget/AppCompatEditText.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1953#1954#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/AdapterCategory.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="53" column="62" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_regitro.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3886">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/GridHorizontalAdapter.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/AdapterGridHorizontal.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_tennis.xml">
-      <provider editor-type-id="android-designer2" />
-=======
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/content/Intent.class">
->>>>>>> user
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="507" column="18" selection-start-line="507" selection-start-column="18" selection-end-line="507" selection-end-column="18" />
           <folding>
             <element signature="e#30990#30991#0" expanded="true" />
             <element signature="e#31041#31042#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/app/Activity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <folding>
-            <element signature="e#0#33428#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -792,66 +736,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sesion.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/usuario.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/AllProductsActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="92" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml">
-      <provider editor-type-id="android-designer2" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/BottomNavigationViewHelper.kt">
->>>>>>> user
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_products.xml">
-      <provider editor-type-id="android-designer2" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/CategoriesActivity.kt">
->>>>>>> user
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_top_tabs.xml">
-      <provider editor-type-id="android-designer2" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/home/MainActivity.kt">
->>>>>>> user
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_top_bar_search.xml">
-      <provider editor-type-id="android-designer2" />
-=======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/models/Category.kt">
->>>>>>> user
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
@@ -865,80 +753,419 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/search/SearchActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Registry.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
 <<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_tob_tabs_categories.xml">
-      <provider editor-type-id="android-designer2" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/SoapService.kt">
->>>>>>> user
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="179" column="24" selection-start-line="179" selection-start-column="24" selection-end-line="179" selection-end-column="24" />
-        </state>
-      </provider>
 <<<<<<< HEAD
-=======
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/os/Looper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#1427#1428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
->>>>>>> user
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_user.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/NetworkStatus.kt">
 =======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Session.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="53" column="47" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/UserActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml">
 >>>>>>> user
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+      <provider editor-type-id="android-designer2" />
+=======
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+>>>>>>> user
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/widget/TextView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="145" column="20" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="20" />
+          <folding>
+            <element signature="e#4749#4750#0" expanded="true" />
+            <element signature="e#4800#4801#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_categories.xml">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_top_tabs.xml">
+>>>>>>> user
+      <provider editor-type-id="android-designer2" />
+=======
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21058fb77f7f630e791be20c44d21179/jars/classes.jar!/android/support/v7/widget/AppCompatEditText.class">
+>>>>>>> user
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1953#1954#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_category.xml">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_top_bar_search.xml">
+>>>>>>> user
+      <provider editor-type-id="android-designer2" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registry.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="2740">
+          <caret line="137" column="46" selection-start-line="137" selection-start-column="46" selection-end-line="137" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_user.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+>>>>>>> user
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" selection-start-line="10" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/BottomNavigationViewHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/search/SearchActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_products.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_tennis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/UserActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_user.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="120" column="45" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="45" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sesion.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/home/SplashActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Session.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21058fb77f7f630e791be20c44d21179/jars/classes.jar!/android/support/v7/app/AppCompatActivity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#2931#2932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/content/ContextWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+          <folding>
+            <element signature="e#1394#1395#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/view/ContextThemeWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+          <folding>
+            <element signature="e#1470#1471#0" expanded="true" />
+            <element signature="e#1521#1522#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/GridHorizontalAdapter.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/AdapterGridHorizontal.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_tennis.xml">
+      <provider editor-type-id="android-designer2" />
+=======
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/content/Intent.class">
+>>>>>>> user
+=======
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/app/Activity.class">
+>>>>>>> user
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="939" column="18" selection-start-line="939" selection-start-column="18" selection-end-line="939" selection-end-column="18" />
+          <folding>
+            <element signature="e#27506#27507#0" expanded="true" />
+            <element signature="e#27557#27558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/os/Parcel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#3261#3262#0" expanded="true" />
+            <element signature="e#3312#3313#0" expanded="true" />
+            <element signature="e#3355#3356#0" expanded="true" />
+            <element signature="e#3406#3407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/net/ConnectivityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
+          <folding>
+            <element signature="e#3598#3599#0" expanded="true" />
+            <element signature="e#3649#3650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/content/ComponentName.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+          <folding>
+            <element signature="e#2239#2240#0" expanded="true" />
+            <element signature="e#2290#2291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/libs/ksoap2-android-assembly-3.6.4-jar-with-dependencies.jar!/org/ksoap2/serialization/AttributeContainer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/libs/ksoap2-android-assembly-3.6.4-jar-with-dependencies.jar!/org/ksoap2/serialization/SoapObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml">
+      <provider editor-type-id="android-designer2" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/BottomNavigationViewHelper.kt">
+>>>>>>> user
+=======
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-28/android.jar!/android/os/Looper.class">
+>>>>>>> user
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding>
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_products.xml">
+      <provider editor-type-id="android-designer2" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/CategoriesActivity.kt">
+>>>>>>> user
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/NetworkStatus.kt">
+>>>>>>> user
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_top_tabs.xml">
+      <provider editor-type-id="android-designer2" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/home/MainActivity.kt">
+>>>>>>> user
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml">
+>>>>>>> user
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_top_bar_search.xml">
+      <provider editor-type-id="android-designer2" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/models/Category.kt">
+>>>>>>> user
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_top_bar_search.xml">
+>>>>>>> user
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/home/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1060">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/AllProductsActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_tob_tabs_categories.xml">
+      <provider editor-type-id="android-designer2" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/SoapService.kt">
+>>>>>>> user
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/categories/CategoriesActivity.kt">
+>>>>>>> user
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+<<<<<<< HEAD
+=======
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/AdapterCategory.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+        </state>
+      </provider>
+>>>>>>> user
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/SoapService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="49" column="53" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/util/NetworkStatus.kt">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Session.kt">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+>>>>>>> user
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/UserActivity.kt">
+>>>>>>> user
+=======
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+>>>>>>> user
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sneakers/user/Registry.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="135" column="14" selection-start-line="135" selection-start-column="14" selection-end-line="135" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
       <provider editor-type-id="android-designer2" />
@@ -946,12 +1173,12 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
 >>>>>>> user
+=======
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+>>>>>>> user
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#658#676#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="560">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
 <<<<<<< HEAD

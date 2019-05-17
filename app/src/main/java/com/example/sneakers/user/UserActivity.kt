@@ -56,15 +56,17 @@ class UserActivity : AppCompatActivity() {
         if(sessionEmail != "Empty"){
             getDataClient(sessionEmail!!)
             imageViewUser?.setImageResource(R.drawable.usuario)
-            textViewWelcome?.text = "Bienvenido"
+            textViewWelcome?.text = "BIENVENIDO"
             textViewName?.text = dataClient?.get(1) + " " +dataClient?.get(2)
             textViewEmail?.text = dataClient?.get(3)
-            textViewPhone?.text= dataClient?.get(4)
-            textViewCp?.text = dataClient?.get(5)
+            textViewPhone?.text= "Tel. " + dataClient?.get(4)
+            textViewCp?.text = "C.P: " + dataClient?.get(5)
+            textViewAddress?.text = "Calle "+dataClient?.get(9)+", Colonia "+ dataClient?.get(8) +", "+ dataClient?.get(7)+", "+ dataClient?.get(6)
             buttonStartSession?.visibility = View.INVISIBLE
 
         }else{
-            textViewCp?.text = "HOLA VISITANTE"
+            textViewWelcome?.text = "HOLA VISITANTE"
+            imageViewUser?.visibility = View.INVISIBLE
             buttonStartSession?.visibility = View.VISIBLE
             buttonCloseSession?.visibility = View.INVISIBLE
 
@@ -78,6 +80,7 @@ class UserActivity : AppCompatActivity() {
         buttonStartSession?.setOnClickListener{
             var intent= Intent (context, Session::class.java)
             startActivity(intent)
+            finish()
         }
 
         //Cerrar sesion

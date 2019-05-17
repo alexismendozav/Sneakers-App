@@ -1,13 +1,13 @@
 package com.example.sneakers.home
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.design.widget.AppBarLayout
 import android.support.design.widget.BottomNavigationView
 import android.widget.GridView
 import android.widget.ImageView
-import android.widget.TextView
 import com.example.sneakers.R
+import com.example.sneakers.categories.CategoriesActivity
 import com.example.sneakers.models.Tennis
 import com.example.sneakers.util.AdapterTennis
 import com.example.sneakers.util.BottomNavigationViewHelper
@@ -30,11 +30,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val bottomNavigationView : BottomNavigationView = context.findViewById(R.id.bottomNaViewBar)
+        val bottomNavigationView : BottomNavigationView = findViewById(R.id.bottomNaViewBar)
         val gridViewHome = findViewById <GridView> (R.id.gridViewHome)
-        val gridViewHome2 = findViewById <GridView> (R.id.gridViewHome2)
-        val imageview1 : ImageView = findViewById(R.id.imageView1)
-        val imageview2 : ImageView = findViewById(R.id.imageView2)
+        val imageView1 : ImageView = findViewById(R.id.imageView1)
+        val imageView2 : ImageView = findViewById(R.id.imageView2)
+        val imageView3 : ImageView = findViewById(R.id.imageView3)
+
         // Call the class that helps navigation
         BottomNavigationViewHelper().setupBottomNavigationView(numberOfActivity,context,bottomNavigationView)
 
@@ -45,19 +46,33 @@ class MainActivity : AppCompatActivity() {
         //Verify connection
         if(NetworkStatus().networkStatus(context)){
             //Call the method for fill in the lists
-            showProductsForCategory("2",listOfTennis!!)
-            showProductsForCategory("4",listOfTennis2!!)
+            showProductsForCategory("1",listOfTennis!!)
             //Call the adapter
             val adapter = AdapterTennis(this,listOfTennis!!)
-            gridViewHome.adapter = adapter
 
-            val adapter1 = AdapterTennis(this,listOfTennis2!!)
-            gridViewHome2.adapter = adapter1
-            imageview1.setImageResource(R.drawable.portada)
-            imageview2.setImageResource(R.drawable.portada1)
+            imageView1.setImageResource(R.drawable.home1)
+            gridViewHome.adapter = adapter
+            imageView2.setImageResource(R.drawable.home3)
+            imageView3.setImageResource(R.drawable.home2)
+
         }else{
             val imageViewErrorNetwork : ImageView = findViewById(R.id.imageViewErrorNetwork)
             imageViewErrorNetwork.setImageResource(R.drawable.error)
+        }
+
+        imageView1.setOnClickListener{
+            val intent= Intent(this,CategoriesActivity::class.java)
+            startActivity(intent)
+        }
+
+        imageView2.setOnClickListener{
+            val intent= Intent(this,CategoriesActivity::class.java)
+            startActivity(intent)
+        }
+
+        imageView3.setOnClickListener{
+            val intent= Intent(this,CategoriesActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -108,6 +123,12 @@ class MainActivity : AppCompatActivity() {
             "BB9797" -> return R.drawable.bb97
             "CQ2972" -> return R.drawable.cq
             "DB0836" -> return R.drawable.db0
+            "365215-06" -> return R.drawable.d1506
+            "367232-02" -> return R.drawable.d202
+            "818382-016" -> return R.drawable.d016
+            "833671-201" -> return R.drawable.d201
+            "839985-006" -> return R.drawable.d006
+            "904260-602" -> return R.drawable.d0602
             "VN0A38EMU5D" -> return R.drawable.vn0
             else -> return  R.drawable.vn0001
         }
