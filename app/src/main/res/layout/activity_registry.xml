@@ -240,19 +240,13 @@
 
         </LinearLayout>
     </ScrollView>
-    <!-- <TextView<ProgressBar
-          android:id="@+id/RegisterProgressBar"
-          android:layout_width="150dp"
-          android:layout_height="150dp"
-          android:layout_centerInParent="true"/>
+    <ProgressBar
+            android:id="@+id/progressBarRegistry"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
 
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="Iniciando sesión"
-       android:textColor="@color/colorPrimaryText"
-       android:textSize="20dp"
-       android:layout_alignBottom="@+id/loginProgressBar"
-       android:layout_alignRight="@+id/loginProgressBar"
-       android:layout_alignLeft="@+id/loginProgressBar"/>-->
 
 </RelativeLayout>

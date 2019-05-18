@@ -92,6 +92,13 @@
                     android:layout_marginEnd="30dp"
                     android:layout_marginRight="30dp"
                     android:scaleType="fitXY"/>
+
+            <ProgressBar
+                    android:id="@+id/progressBarHome"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"/>
         </RelativeLayout>
 
         <!--Layout footer -->

@@ -3,9 +3,8 @@ package com.example.sneakers.user
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
+import android.view.View
+import android.widget.*
 import com.example.sneakers.R
 import com.example.sneakers.util.SoapService
 import kotlinx.android.synthetic.main.activity_registry.*
@@ -27,6 +26,7 @@ class Registry : AppCompatActivity() {
     private var editTextPassword : EditText ?= null
     private var editTextVerifyPassword : EditText ?= null
     private var buttonRegistry   : Button ?= null
+    private lateinit var progressBarRegistry : ProgressBar
 
     private var correctData = ""
 
@@ -47,8 +47,10 @@ class Registry : AppCompatActivity() {
         editTextPassword =findViewById(R.id.inputPasswordRegister)
         editTextVerifyPassword = findViewById(R.id.inputVerifyPassword)
         buttonRegistry   = findViewById(R.id.btnRegisterUser)
+        progressBarRegistry = findViewById(R.id.progressBarRegistry)
 
         btnRegisterUser.setOnClickListener{
+            progressBarRegistry.visibility = View.VISIBLE
             if(verifyData()){
                 correctData =SoapService().setDataUser(getId(),editTextName?.text.toString(),
                     editTextLastName?.text.toString(),editTextEmail?.text.toString(),
@@ -56,6 +58,8 @@ class Registry : AppCompatActivity() {
                     editTextCountry?.text.toString(),editTextCity?.text.toString(),
                     editTextColony?.text.toString(),editTextStreet?.text.toString(),
                     editTextPassword?.text.toString())
+            }else{
+                Toast.makeText(this,"Verifique sus datos",Toast.LENGTH_LONG).show()
             }
 
             if(correctData == "1"){
@@ -75,7 +79,7 @@ class Registry : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }else{
-                    
+                progressBarRegistry.visibility = View.INVISIBLE
             }
         }
     }
@@ -85,17 +89,17 @@ class Registry : AppCompatActivity() {
     }
 
     private fun verifyData():Boolean{
-        var name = false
-        var lastName = false
-        var email = false
-        var phone = false
-        var cp = false
-        var country = false
-        var city = false
-        var colony = false
-        var street = false
-        var password = false
-        var verifyPassword = false
+        val name: Boolean
+        val lastName: Boolean
+        val email: Boolean
+        val phone: Boolean
+        val cp: Boolean
+        val country: Boolean
+        val city: Boolean
+        val colony: Boolean
+        val street: Boolean
+        val password: Boolean
+        val verifyPassword: Boolean
 
         //Verificar que el nombre sea correcto
         if(!editTextName?.text.isNullOrEmpty()) {
@@ -228,7 +232,7 @@ class Registry : AppCompatActivity() {
 
         //Verificar calle
         if(!editTextStreet?.text.isNullOrEmpty()) {
-            if(Pattern.compile("[a-zA-ZÀ-ÿ\\u00f1\\u00d1\\s#]*").matcher(editTextStreet?.text).matches())
+            if(Pattern.compile("[a-zA-Z0-9À-ÿ\\u00f1\\u00d1\\s#]*").matcher(editTextStreet?.text).matches())
             {
                 street = true
             }else

@@ -4,8 +4,10 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
+import android.view.View
 import android.widget.GridView
 import android.widget.ImageView
+import android.widget.ProgressBar
 import com.example.sneakers.R
 import com.example.sneakers.categories.CategoriesActivity
 import com.example.sneakers.models.Tennis
@@ -19,42 +21,43 @@ class MainActivity : AppCompatActivity() {
     //App Context
     private val context = this
 
+    private lateinit var bottomNavigationView : BottomNavigationView
+    private lateinit var gridViewHome : GridView
+    private lateinit var imageView1 : ImageView
+    private lateinit var imageView2 : ImageView
+    private lateinit var imageView3 : ImageView
+    private lateinit var progressBarHome : ProgressBar
     //Help to know what activity is selected in the navigation bar
     private val numberOfActivity = 0
-
     //Other Variables
     private var listOfTennis : ArrayList <Tennis> ?= null
-    private var listOfTennis2 : ArrayList <Tennis> ?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
-        val bottomNavigationView : BottomNavigationView = findViewById(R.id.bottomNaViewBar)
-        val gridViewHome = findViewById <GridView> (R.id.gridViewHome)
-        val imageView1 : ImageView = findViewById(R.id.imageView1)
-        val imageView2 : ImageView = findViewById(R.id.imageView2)
-        val imageView3 : ImageView = findViewById(R.id.imageView3)
+        bottomNavigationView = findViewById(R.id.bottomNaViewBar)
+        gridViewHome = findViewById(R.id.gridViewHome)
+        imageView1 = findViewById(R.id.imageView1)
+        imageView2 = findViewById(R.id.imageView2)
+        imageView3 = findViewById(R.id.imageView3)
+        progressBarHome = findViewById(R.id.progressBarHome)
 
         // Call the class that helps navigation
         BottomNavigationViewHelper().setupBottomNavigationView(numberOfActivity,context,bottomNavigationView)
-
         //Lists are initialized
         listOfTennis = ArrayList()
-        listOfTennis2 = ArrayList()
-
         //Verify connection
         if(NetworkStatus().networkStatus(context)){
+            progressBarHome.visibility = View.VISIBLE
             //Call the method for fill in the lists
             showProductsForCategory("1",listOfTennis!!)
             //Call the adapter
             val adapter = AdapterTennis(this,listOfTennis!!)
-
             imageView1.setImageResource(R.drawable.home1)
             gridViewHome.adapter = adapter
             imageView2.setImageResource(R.drawable.home3)
             imageView3.setImageResource(R.drawable.home2)
-
+            progressBarHome.visibility = View.INVISIBLE
         }else{
             val imageViewErrorNetwork : ImageView = findViewById(R.id.imageViewErrorNetwork)
             imageViewErrorNetwork.setImageResource(R.drawable.error)
@@ -78,23 +81,23 @@ class MainActivity : AppCompatActivity() {
 
     //Call the SOAP method and fill in the list
     private fun showProductsForCategory(category: String,list : ArrayList<Tennis>){
+
         //Call the SOAP method
         val productsString = SoapService().getProductsForCategory(category)
-
         //Divide the string
         val products = productsString.split("\n")
 
         //Tennis objects are created
         var i = 0
         while (i <= products.size - 2) {
-            var id = products[i++]
-            var name = products[i++]
-            var brand = products[i++]
-            var price = products[i++]
-            var objective = products[i++]
-            var description = products[i++]
-            var purchasePrice = products[i++]
-            list?.add(Tennis(id, name, brand, price, objective, description, purchasePrice, extractImages(id)))
+            val id = products[i++]
+            val name = products[i++]
+            val brand = products[i++]
+            val price = products[i++]
+            val objective = products[i++]
+            val description = products[i++]
+            val purchasePrice = products[i++]
+            list.add(Tennis(id, name, brand, price, objective, description, purchasePrice, extractImages(id)))
         }
     }
 

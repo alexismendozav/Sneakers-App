@@ -8,6 +8,7 @@ import android.preference.PreferenceManager
 import android.support.v7.widget.AppCompatButton
 import android.view.View
 import android.widget.EditText
+import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import com.example.sneakers.R
@@ -20,6 +21,7 @@ class Session : AppCompatActivity() {
     private var buttonStarSession : AppCompatButton ?= null
     private var textViewCreateAccount : TextView ?= null
     private var textViewRegistry : TextView ?= null
+    private lateinit var progressBarSession : ProgressBar
 
     private val key = "session"
 
@@ -32,6 +34,7 @@ class Session : AppCompatActivity() {
         buttonStarSession = findViewById(R.id.btnStartSession)
         textViewCreateAccount = findViewById(R.id.textViewCreateAccount)
         textViewRegistry = findViewById(R.id.textViewRegistry)
+        progressBarSession = findViewById(R.id.progressBarLogin)
 
         val preferences = PreferenceManager.getDefaultSharedPreferences(this)
 
@@ -47,7 +50,7 @@ class Session : AppCompatActivity() {
             textViewRegistry?.visibility = View.INVISIBLE
             var email:String= editTextEmail?.text.toString()
             var password : String = editTextPassword?.text.toString()
-            var correctData = SoapService().getStartSession(email, password )
+
 
 
             if(!editTextEmail?.text.isNullOrEmpty()){
@@ -55,6 +58,8 @@ class Session : AppCompatActivity() {
                 {
                     editTextEmail?.error= "Digite su correo"
                 }else{
+                    progressBarSession.visibility= View.VISIBLE
+                    var correctData = SoapService().getStartSession(email, password )
                     if(correctData == "1"){
                         //Modo edicion del preference manager
                         val editor = preferences.edit()
